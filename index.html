@@ -17,19 +17,24 @@
 
 <style type="text/css">
 #intro{
-     margin: 20px;
-  padding: 20px;
+     margin: 15px;
+  padding: 15px;
   background-color: white;
   border: 3px;
   border-style: solid;
     border-color: #000000;
      box-shadow: 2px 2px 3px grey;
+     color: black;
     }
 
 
 	table.tableizer-table {
-		font-size: 15px;
-		border: 3px solid #CCC; 
+		font-size: 12px;
+		border: 3px;
+  border-style: solid;
+    border-color: #000000;
+    margin: 15px;
+    padding:15px;
 		
 	} 
 	.tableizer-table td {
@@ -38,12 +43,12 @@
 		border: 1px solid #CCC;
 		background-color:white;
 		color: black;
-		font-size:18px;
+		font-size:12px;
 		font-family: roboto, sans-serif;
 	}
 	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
+		background-color: black; 
+		color: white;
 		font-weight: bold;
 		font-family: roboto, sans-serif;
 	}
@@ -52,9 +57,35 @@
 	position:fixed;
 	bottom:0px;
 	z-index: 100;
-	width: 100vw;
+	width: 100%;
 	background-color: black;
 	padding-top: 10px;
+
+	}
+	#audio{
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 5px;
+		width:100%;
+		background-color: black;
+		color:black;
+	}
+
+	#mug-shot{
+  		position:relative;
+  		top:30px;
+
+	}
+
+	#copyright{
+		border: 3px;
+  border-style: solid;
+    border-color: #000000;
+    background-color: white;
+    color:black;
+    margin: 15px;
+    padding: 15px;
+  
 
 	}
 </style>
@@ -141,7 +172,7 @@ scrollEffect();
 
 
 <!-- spacer -->
-<br><br><br><br><br><br>
+<br><br><br>
 
 <!-- content -->
 
@@ -149,15 +180,48 @@ scrollEffect();
 <!-- curatorial Note -->
 <div class="row-fluid">
     <div class="col-md-12">
-    	<div id='intro'>
-			<h3><b>Oral History Metadata Synchronizer</b> is a widget to connect a transcript with its audio, and build annotations around an interview. This is a sample of an interview of <b>O</b>baid <b>S</b>iddiqi conducted by <b>I</b>ndira <b>C</b>howdhury where he discusses his entry into neurobiology. This is part of the TIFR Oral History Project. Copyright: TIFR Archives</h3><br>
+    	<div id='intro' style="font-size:12px; margin-top:-4px;">
+			<p><b>Oral History Metadata Synchronizer </b>is a widget to synchronize an interview transcript with the original oral history interview. Click on the timestamps to go directly to particular sections. In future versions of this widget, one could edit the transcript and encode annotations into an audio file. This is a sample of an interview of Obaid Siddiqi conducted by Indiaira Chowdhury where he discusses his entry into neurobiology. 
+			</p>
 			<!--<h6>EXPERIMENTAL! Works on latest <a href='https://www.mozilla.org/en-US/firefox/new/?gclid=CMGw1dCF5s8CFdiIaAod5YYBMg' target='_blank'>firefox</a> for desktop.</h6>-->
-
 		</div>
+	</div>
+</div>	
+<div class='col-md-6'  style='margin-top: -15px;'>
+	<div id = 'mug-shot'>
+	
+		<center><figure><img style="border: 10px;border-style: solid;border-color: #000000;width:400px; height:auto;"
+		src = 'Profile - OS-2.JPG' />
+		<figcaption style="color:white; font-size:20px">Obaid Siddiqi</figcaption>
+		</figure></center>
 	</div>
 </div>
 
-<br><br>
+<div class = 'col-md-6' style='margin-top: -15px;'>
+	<div id = 'copyright' style='font-size: 12px;'>
+		<p >Oral History of Biology at TIFR and NCBS
+		TIFR Archives,Mumbai and NCBS, Bangalore</p>
+		<p><b>Obaid Siddiqi </b></p>
+		<p>Interviews conducted by Indira Chowdhury</p>
+		<p>December 19 2002 - 23 May 2003</p>
+
+		<p><b>Session 7:</b> 6 Feb 2003</p>
+		<p><b>Venue:</b> Obaid Siddiqi’s office at National Centre for Biological Sciences (NCBS)
+		<br><b>Session Focus:</b> Doing science in India</p>
+
+		<p><b>Legend:</b></p>
+		<p>IC: Indira Chowdhury</p>
+		<p>OS: Obaid Siddiqi</p>
+
+		<p style='font-size: 10px;'>Requests for permission to quote for publication should be addressed to the TIFR Archivist. All uses of this manuscript are covered by a legal agreement between The TIFR Oral Archives and Professor Obaid Siddiqi. The manuscript is thereby made available for research purposes. Copyright has been assigned to the Tata Institute of Fundamental Research – Oral Archives, Mumbai © 2003
+		</p>
+	</div>
+</div>
+
+		
+
+
+
 
     <div id="audio-bar">
     
