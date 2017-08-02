@@ -73,7 +73,7 @@
 			    margin-top: -4px;
 			    color: #333726;
 			    font-size: 17px;
-			    font-family: roboto;
+			    font-family: google open sans font;
 		}
 
 		.ncbs-home-text{
@@ -83,7 +83,7 @@
 			max-width: 375px; 
 			font-size: 16px; 
 			line-height: 19px; 
-			font-family: roboto;
+			font-family: google open sans font;
 			color: #f2f2f2;
 			padding:15px; 
 			border-radius:0px; 
@@ -109,7 +109,9 @@
   	border: 3px;
  // border-style: solid;
  // border-color: #000000;
-     box-shadow: 2px 2px 3px grey;
+  //   box-shadow: 2px 2px 3px grey;
+  	font-size:17px;
+  	font-family: google open sans font;
      color: black;
     }
 
@@ -130,7 +132,7 @@
 		background-color:white;
 		color: black;
 		font-size:12px;
-		font-family: roboto, sans-serif;
+		font-family: google open sans font, sans-serif;
 	}
 	.tableizer-table th {
 		padding: 4px;
@@ -139,7 +141,7 @@
 		background-color:white;
 		color: black;
 		font-size:12px;
-		font-family: roboto, sans-serif;
+		font-family: google open sans font, sans-serif;
 
 	}
 	#audio-bar{
@@ -148,7 +150,7 @@
 		bottom:0px;
 		z-index: 100;
 		width: 100%;
-		background-color: black;
+		//background-color: black;
 		padding-top: 10px;
 
 	}
@@ -157,8 +159,8 @@
 		padding-left: 10px;
 		padding-top: 5px;
 		width:100%;
-		background-color: black;
-		color:black;
+	//	background-color: black;
+	//	color:black;
 	}
 
 	#mug-shot{
@@ -174,8 +176,10 @@
 	  	border: 3px;
 	 	// border-style: solid;
 	 	//   border-color: #000000;
-	    box-shadow: 2px 2px 3px grey;
+	  //  box-shadow: 2px 2px 3px grey;
 	    color: black;
+	    font-size:17px;
+	    font-family: google open sans font;
 
 	}
 
