@@ -73,7 +73,7 @@
 			    margin-top: -4px;
 			    color: #333726;
 			    font-size: 17px;
-			    font-family: google open sans font;
+			    font-family: 'Open Sans', sans-serif;
 		}
 
 		.ncbs-home-text{
@@ -83,7 +83,7 @@
 			max-width: 375px; 
 			font-size: 16px; 
 			line-height: 19px; 
-			font-family: google open sans font;
+			font-family: 'Open Sans', sans-serif;
 			color: #f2f2f2;
 			padding:15px; 
 			border-radius:0px; 
@@ -105,13 +105,13 @@
 #intro{
      margin: 15px;
   	padding: 15px;
+  	font-size:17px !important;
   	background-color: white;
   	border: 3px;
- // border-style: solid;
- // border-color: #000000;
-  //   box-shadow: 2px 2px 3px grey;
-  	font-size:17px;
-  	font-family: google open sans font;
+ /* border-style: solid;
+  border-color: #000000;
+     box-shadow: 2px 2px 3px grey;*/
+  	font-family: 'Open Sans', sans-serif;
      color: black;
     }
 
@@ -132,7 +132,7 @@
 		background-color:white;
 		color: black;
 		font-size:12px;
-		font-family: google open sans font, sans-serif;
+		font-family: 'Open Sans', sans-serif;
 	}
 	.tableizer-table th {
 		padding: 4px;
@@ -141,12 +141,10 @@
 		background-color:white;
 		color: black;
 		font-size:12px;
-		font-family: google open sans font, sans-serif;
-
+		font-family: 'Open Sans', sans-serif;
 	}
+	
 	#audio-bar{
-
-		position:fixed;
 		bottom:0px;
 		z-index: 100;
 		width: 100%;
@@ -159,8 +157,8 @@
 		padding-left: 10px;
 		padding-top: 5px;
 		width:100%;
-	//	background-color: black;
-	//	color:black;
+	/*	background-color: black;
+		color:black;*/
 	}
 
 	#mug-shot{
@@ -174,12 +172,12 @@
 	  	padding: 15px;
 	  	background-color: white;
 	  	border: 3px;
-	 	// border-style: solid;
-	 	//   border-color: #000000;
-	  //  box-shadow: 2px 2px 3px grey;
+	 	/*border-style: solid;
+	 	border-color: #000000;
+	    box-shadow: 2px 2px 3px grey;*/
 	    color: black;
-	    font-size:17px;
-	    font-family: google open sans font;
+	    font-size:17px !important;
+	    font-family: 'Open Sans', sans-serif;
 
 	}
 
