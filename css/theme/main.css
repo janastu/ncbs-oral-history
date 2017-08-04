@@ -116,31 +116,26 @@
     }
 
 
-	table.tableizer-table {
-		font-size: 12px;
+	table. tableizer-table {
 		border: 3px;
- 	//	border-style: solid;
-   	//  border-color: #000000;
+ 	/*	border-style: solid;
+   	  border-color: #000000;*/
     	margin: 15px;
     	padding:15px;
 		
 	} 
 	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
+		padding: 5px;
 		border: 1px solid #CCC;
 		background-color:white;
 		color: black;
-		font-size:12px;
 		font-family: 'Open Sans', sans-serif;
 	}
 	.tableizer-table th {
-		padding: 4px;
-		margin: 3px;
+		padding: 5px;
 		border: 1px solid #CCC;
 		background-color:white;
 		color: black;
-		font-size:12px;
 		font-family: 'Open Sans', sans-serif;
 	}
 	
