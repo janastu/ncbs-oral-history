@@ -3,7 +3,19 @@
   text-decoration: none;
 }*/
 
+.jp-audio{
+	width:100% !important;
+}
+.jp-progress{
+	width:100% !important;
+}
 
+#player-wrap{
+	width:100%;
+}
+.column-wrap{
+	margin-top:40px;
+}
 .image-container{
 	height:600px;
 }
@@ -139,14 +151,7 @@
 		font-family: 'Open Sans', sans-serif;
 	}
 	
-	#audio-bar{
-		bottom:0px;
-		z-index: 100;
-		width: 100%;
-		//background-color: black;
-		padding-top: 10px;
 
-	}
 	#audio{
 		padding-right: 10px;
 		padding-left: 10px;
@@ -157,13 +162,12 @@
 	}
 
 	#mug-shot{
-  		position:relative;
-  		top:30px;
+
 
 	}
 
 	#copyright{
-		margin: 15px;
+		/*margin: 15px;
 	  	padding: 15px;
 	  	background-color: white;
 	  	border: 3px;

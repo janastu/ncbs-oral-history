@@ -8,106 +8,143 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 		<link type="text/css" rel="stylesheet" href="css/theme/main.css" />
-		
-		<script type='text/javascript' src='js/jquery.min.js'></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/classie.js"></script>
 
+		  <!-- audio player css-->
+		  <link href="js/jplayer/skin/pink.flag/css/jplayer.pink.flag.css" rel="stylesheet">
+
+		  <!-- image slider -->
+		    <link href="js/lightGallery-master/dist/css/lightgallery.min.css" rel="stylesheet">
+		<link href="js/lightGallery-master/dist/css/lg-transitions.min.css" rel="stylesheet">
+		<script type='text/javascript' src='js/underscore-min.js'></script>
+		<script type='text/javascript' src='transcript.js'></script>
 </head>
 <body>
-<script type='text/javascript' src='js/underscore-min.js'></script>
-<script type='text/javascript' src='transcript.js'></script>
-<!--<script type="text/javascript">
-		function scrollEffect(){
-			
-			window.addEventListener('scroll', function(e){
-		    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-		        shrinkOn = 25,
-		        header = document.querySelector("header");
-		    if (distanceY > shrinkOn) {
-		        classie.add(header,"smaller");
-		        //$("#ncbs-home-text-collapsible").hide();
-		    } else {
-		    	//$("#ncbs-home-text-collapsible").show();
-		        if (classie.has(header,"smaller")) {
-		            classie.remove(header,"smaller");
-		        }
-		    }
-		});
-		};
 
-scrollEffect();
-	
-</script>-->
 
 <!-- curatorial Note -->
-<div class="row-fluid">
-    <div class="col-md-12">
-    	<div id='intro'>
-			<p><b>Oral History Metadata Synchronizer </b>is a widget to synchronize an interview transcript with the original oral history interview. Click on the timestamps to go directly to particular sections. In future versions of this widget, one could edit the transcript and encode annotations into an audio file. This is a sample of an interview of Obaid Siddiqi conducted by Indira Chowdhury where he discusses his entry into neurobiology. 
-			</p>
-			<!--<h6>EXPERIMENTAL! Works on latest <a href='https://www.mozilla.org/en-US/firefox/new/?gclid=CMGw1dCF5s8CFdiIaAod5YYBMg' target='_blank'>firefox</a> for desktop.</h6>-->
+<div class="container">
+    <div class="row">
+    	<h2 >Oral History of Biology at TIFR and NCBS
+    	<small> - TIFR Archives, Mumbai and NCBS, Bangalore</small></h2>
+  
+
+		<div class='col-md-4'  >
+			<div class="column-wrap">
+			  <div id = 'mug-shot'>
+				
+				<img style="width:400px; height:auto;"
+					src = 'Profile - OS-2.JPG' class="img-responsive"/>
+					
+				</div>
+
+
+				
+				    <!-- Audio player temmplate and COntainer -->
+				  <div id="player-wrap">
+				  	<!-- Audio player container -->
+				  	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+				      <div class="jp-type-single">
+				        <div class="jp-gui jp-interface">
+				          <div class="jp-volume-controls">
+				            <button class="jp-mute" role="button" tabindex="0">mute</button>
+				            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+				            <div class="jp-volume-bar">
+				              <div class="jp-volume-bar-value"></div>
+				            </div>
+				          </div>
+				          <div class="jp-controls-holder">
+				            <div class="jp-controls">
+				              <button class="jp-play" role="button" tabindex="0">play</button>
+				              <button class="jp-stop" role="button" tabindex="0">stop</button>
+				            </div>
+				            <div class="jp-progress">
+				              <div class="jp-seek-bar">
+				                <div class="jp-play-bar"></div>
+				              </div>
+				            </div>
+				            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				            <div class="jp-toggles">
+				              <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="jp-details">
+				          <div class="jp-title" aria-label="title">&nbsp;</div>
+				        </div>
+				        <div class="jp-no-solution">
+				          <span>Update Required</span>
+				          To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				        </div>
+				      </div>
+				    </div>
+				<!-- End audio player -->
+
+				<p style='font-size: 12px;font-family:google open sans font'>Requests for permission to quote for publication should be addressed to the TIFR Archivist. All uses of this manuscript are covered by a legal agreement between The TIFR Oral Archives and Professor Obaid Siddiqi. The manuscript is thereby made available for research purposes. Copyright has been assigned to the Tata Institute of Fundamental Research – Oral Archives, Mumbai © 2003
+				</p>
+			</div>
+			<!-- End player wrap -->
+		
+			</div>
+		</div>
+
+		<div class = 'col-md-7' style=''>
+			
+			<div id = 'copyright' class="column-wrap">
+				<p><b>Description: </b> Interview with Obaid Siddiqi, by Indira Chowdhury on "Doing Science in India".</p>
+				<p><b>Interviewee: </b> Obaid Siddiqi </p>
+				<p><b>Interviewer: </b> Indira Chowdhury</p>
+				<p><b>Time Period: </b> December 19, 2002 - 23 May, 2003</p>
+				<p><b>Session 7: </b> February 6, 2003</p>
+				<p><b>Venue: </b> Obaid Siddiqi’s office at National Centre for Biological Sciences (NCBS)
+				<br><b>Session Focus: </b> Doing science in India</p>
+
+				<h3><small>Legend:</h3>
+				<p>IC: Indira Chowdhury</p>
+				<p>OS: Obaid Siddiqi</p>
+
+				<h3><small> Subtitles </small> </h3>
+				<div id="subtitles"></div>
+			</div>
+			
 		</div>
 	</div>
+
+
+
+	
 </div>	
-<div class='col-md-6'  style='margin-top: -15px;'>
-	<div id = 'mug-shot'>
+
+
+
+		
 	
-		<center><figure><img style="width:400px; height:auto;"
-		src = 'Profile - OS-2.JPG' />
-		<figcaption style="color:white; font-size:20px">Obaid Siddiqi</figcaption>
-		</figure></center>
-	</div>
-</div>
 
-<div class = 'col-md-6' style='margin-top: -15px;'>
-	<div id = 'copyright'>
-		<p >Oral History of Biology at TIFR and NCBS
-		TIFR Archives,Mumbai and NCBS, Bangalore</p>
-		<p><b>Obaid Siddiqi </b></p>
-		<p>Interviews conducted by Indira Chowdhury</p>
-		<p>December 19 2002 - 23 May 2003</p>
 
-		<p><b>Session 7:</b> 6 Feb 2003</p>
-		<p><b>Venue:</b> Obaid Siddiqi’s office at National Centre for Biological Sciences (NCBS)
-		<br><b>Session Focus:</b> Doing science in India</p>
-
-		<p><b>Legend:</b></p>
-		<p>IC: Indira Chowdhury</p>
-		<p>OS: Obaid Siddiqi</p>
-
-		<p style='font-size: 12px;font-family:'google open sans font'>Requests for permission to quote for publication should be addressed to the TIFR Archivist. All uses of this manuscript are covered by a legal agreement between The TIFR Oral Archives and Professor Obaid Siddiqi. The manuscript is thereby made available for research purposes. Copyright has been assigned to the Tata Institute of Fundamental Research – Oral Archives, Mumbai © 2003
-		</p>
-	</div>
-</div>
-    <div id="audio-bar">
-    
-    <center>
-<audio controls id='audio'  preload = 'auto'  >
- <source src='OS_Session7-extract_Theme8-OH-Synchronizer CBR.mp3' type='audio/mpeg'/>
-  </audio>
-  </center>
-</div>
-<!-- TRY HOWLER.JS FOR BETTER BROWSER COMPATABILITY-->
-
-<div class="row-fluid">
-    <div class="col-md-12">
-
-<table class="tableizer-table" id='table'>
-</table>
-<br><br>
-</div>
-</div>
-
-	
-</div>
 <!--<div class="col-sm-12">
 	<div class="text-center" style="margin-top:15px; font-family: roboto;">
 		<a data-toggle="modal" data-target="#ncbs-content-policy" style="cursor: pointer;     color: #333726;">copyright &copy 2016</a>
 	</div>
 </div>-->
 </div>
-<script>
+
+
+   
+
+
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- audio player and slide show -->
+  <script type="text/javascript" src="js/lightGallery-master/dist/js/lightgallery-all.js"></script>
+<script type="text/javascript" src="js/jplayer/jplayer/jquery.jplayer.min.js"></script>
+
+<script type="text/javascript" src="js/jplayer/jplayer/jquery.jplayer.min.js"></script>
+<!--script type="text/javascript" src="libs/jplayer/jplayer/jquery.jplayer.swf"></script-->
+
+<script src="js/jplayer/add-on/jplayer.playlist.min.js"></script>
+
+<!--script>
 	//create table 
 	var tableTemplate = _.template(
 	"<thead><tr class='tableizer-firstrow'><th><center>Time</center></th><th><center>Speaker</center></th><th><center>Content</center></th></tr></thead><tbody>"+
@@ -123,7 +160,7 @@ scrollEffect();
 
 	document.getElementById("table").innerHTML = tableData
 
-</script>
+</script-->
 
 <script>
 //get time data
@@ -146,7 +183,135 @@ $('.timer').click(function(e) {
   
 </script>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+  	window.OH = window.OH || {};
+  	OH.data = transcript || [];
+  	OH.utilities = {};
+  	OH.$audioPlayer = $("#jquery_jplayer_1");
+  	OH.subtitlesElement = document.getElementById("subtitles");
+  	console.log("ready");
+  	OH.init = function() {
 
+  		// normalize data for app needs
+  		// add property end
+  		OH.data.map(function(item, index, arr){ 
+  			i = index+1; 
+  			if(i<arr.length) {
+  				item.end = arr[i].start;
+  			} else item.end = "47:18"  
+  			return item;
+  		});
+
+  		//compile subtitle data with html and create DOm
+  		OH.createSubtitle();
+
+  		// Initialize Jplayer and bind audio events
+  		OH.initPlayer();
+  	}
+
+
+  	//Readabale time format -> not using this yet
+  	 OH.utilities.fancyTimeFormat = function (time)
+  	 {   
+  	     // Hours, minutes and seconds
+  	     var hrs = ~~(time / 3600);
+  	     var mins = ~~((time % 3600) / 60);
+  	     var secs = time % 60;
+
+  	     // Output like "1:01" or "4:03:59" or "123:03:59"
+  	     var ret = "";
+
+  	     if (hrs > 0) {
+  	     	//console.log("hour", hrs);
+  	         ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
+  	     }
+
+  	     ret += "" + mins + ":" + (secs < 10 ? "0" : "");
+  	     ret += "" + secs;
+  	     console.log("min", mins, secs);
+  	     //return {min: mins, sec: secs};
+  	     return ret;
+  	 }
+
+  	 //HH:MM:SS to seconds, because transcript units needs conversion
+  	 OH.utilities.hmsToSecondsOnly = function(str) {
+  	     var p = str.split(':'),
+  	         s = 0, m = 1;
+
+  	     while (p.length > 0) {
+  	         s += m * parseInt(p.pop(), 10);
+  	         m *= 60;
+  	     }
+
+  	     return s;
+  	 }
+
+  	 // subtile Dom update data
+  	 
+  	 OH.createSubtitle = function()
+  	             {
+  	                 var element;
+  	                 //console.log(transcript, "transcript in subtitle");
+  	                 for (var i = 0; i < OH.data.length; i++) {
+  	                     element = document.createElement('p');
+  	                     element.setAttribute("id", "c_" + i);
+  	                     element.setAttribute("class", "lead");
+  	                     element.innerText = OH.data[i].start + " - " + OH.data[i].speaker + ": " + OH.data[i].text + " ";
+  	                     element.style.display = 'none';
+  	                     OH.subtitlesElement.appendChild(element);
+  	                 }
+  	             }
+
+  	OH.initPlayer = function(){
+  		OH.$audioPlayer.jPlayer({
+  		  ready: function () {
+  		    $(this).jPlayer("setMedia", {
+  		      title: 'Interview with Obaid Siddiqi, by Indira Chowdhury on "Doing Science in India".',
+  		      mp3: 'http://archives.ncbs.res.in/exhibit/13ways/sandbox/ncbs-oral-history/OS_Session7-extract_Theme8-OH-Synchronizer%20CBR.mp3',
+  		      artist: 'by Indira Chowdhury'
+  		    });
+
+		      $(this).bind($.jPlayer.event.timeupdate, function(event) {
+	      	
+
+	      	 	OH.data.forEach(function(element, index, array){
+	      	 		//console.log("expected transcrript item", element, index, array);
+	      	 
+				// hide stale data
+				if($(OH.subtitlesElement).find('.lead:visible').length > 1){
+				
+					$(OH.subtitlesElement.children[index]).siblings().css('display', 'none');
+					//$(OH.subtitlesElement).filter(':visible').toggle('display');
+				}
+
+				// show relevant data
+               if( event.jPlayer.status.currentTime >= OH.utilities.hmsToSecondsOnly(element.start) && event.jPlayer.status.currentTime <= OH.utilities.hmsToSecondsOnly(element.end) ) {
+               			  //console.log("if trye", OH.subtitlesElement.children[index], index);
+               		    OH.subtitlesElement.children[index].style.display ='block';                		    
+               }  
+                                   	 
+	      	 });
+
+		   });
+  		 },
+  		  cssSelectorAncestor: "#jp_container_1",
+  		  swfPath: "/js/jplayer/jplayer",
+  		  supplied: "mp3",
+  		  useStateClassSkin: true,
+  		  autoBlur: false,
+  		  smoothPlayBar: true,
+  		  keyEnabled: true,
+  		  remainingDuration: true,
+  		  toggleDuration: true
+  		});
+
+
+  	}
+    
+  	OH.init();
+  });
+</script>
 
 
 </body>
