@@ -9,7 +9,9 @@
 .jp-progress{
 	width:100% !important;
 }
-
+.jp-volume-controls .jp-volume-bar{
+	width: 100%;
+}
 #player-wrap{
 	width:100%;
 }
